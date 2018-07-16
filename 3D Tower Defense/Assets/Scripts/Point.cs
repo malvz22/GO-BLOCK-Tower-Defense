@@ -4,4 +4,5 @@ using UnityEngine;
 
 public class Point : MonoBehaviour {
     public Vector3 direction;
+    public Vector3 rotation;
 }

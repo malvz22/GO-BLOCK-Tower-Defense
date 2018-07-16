@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4325953719527958}
   - component: {fileID: 65062253242773730}
   - component: {fileID: 23092386724306116}
-  - component: {fileID: 114284146394781312}
   m_Layer: 0
   m_Name: TapakBox
   m_TagString: Untagged
@@ -57,7 +56,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4128274347803834}
   - component: {fileID: 65079398174523242}
-  - component: {fileID: 114086044194080584}
   - component: {fileID: 23978291263928422}
   m_Layer: 0
   m_Name: Tapak
@@ -73,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1968333009470060}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.022508144, y: -0.040065765, z: -76}
+  m_LocalPosition: {x: 0.022508144, y: -0.040065765, z: -40}
   m_LocalScale: {x: 1.0201, y: 1.0201, z: 1.0201}
   m_Children:
   - {fileID: 4325953719527958}
@@ -246,36 +244,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 24, y: 26.999998, z: 22.999998}
   m_Center: {x: 25, y: 13.499997, z: -35.500027}
---- !u!114 &114086044194080584
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1968333009470060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67e0b82492a8cea4d851c18bf6a1f98b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverColor: {r: 0.41911763, g: 0.41911763, b: 0.41911763, a: 1}
-  notEnoughMoneyColor: {r: 1, g: 0, b: 0, a: 1}
-  positionOffset: {x: 100, y: 0, z: 0}
-  turret: {fileID: 0}
---- !u!114 &114284146394781312
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1192503371499270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67e0b82492a8cea4d851c18bf6a1f98b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverColor: {r: 0.5588235, g: 0.5588235, b: 0.5588235, a: 1}
-  notEnoughMoneyColor: {r: 0, g: 0, b: 0, a: 0}
-  positionOffset: {x: 0, y: 0, z: 0}
-  turret: {fileID: 0}
 --- !u!114 &114407224554607244
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -289,5 +257,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 0, b: 0, a: 1}
   notEnoughMoneyColor: {r: 0, g: 0, b: 0, a: 0}
-  positionOffset: {x: 0, y: 0, z: 0}
+  positionOffset: {x: 4, y: 4, z: -6.5}
   turret: {fileID: 0}

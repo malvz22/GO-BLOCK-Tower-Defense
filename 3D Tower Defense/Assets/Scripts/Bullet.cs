@@ -9,6 +9,7 @@ public class Bullet : MonoBehaviour {
     public int damage = 50;
 
     public float explosionRadius = 0f;
+
     public void Seek(Transform _target)
     {
         target = _target; 
@@ -40,7 +41,8 @@ public class Bullet : MonoBehaviour {
     {
         if (explosionRadius > 0f)
         {
-            Explode();
+            //Explode();
+            Damage(target);
         } else
         {
             Damage(target);

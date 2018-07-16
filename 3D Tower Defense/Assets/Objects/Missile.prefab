@@ -122,7 +122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65763ef7761dcbb48b54b578764fb2ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
+  speed: 40
+  damage: 50
   explosionRadius: 60
 --- !u!135 &135460959364708132
 SphereCollider:

@@ -25,7 +25,9 @@ public class Node : MonoBehaviour {
 
     public Vector3 GetBuildPosition()
     {
+         
         return transform.position + positionOffset;
+        //return transform.position;
     }
 
     void OnMouseDown()

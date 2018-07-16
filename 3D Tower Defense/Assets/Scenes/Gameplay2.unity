@@ -5944,7 +5944,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c21b2fa8dcbe744bba76df2425e39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 0, y: 360, z: 0}
+  direction: {x: 0, y: 180, z: 0}
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!4 &367392064 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4128274347803834, guid: 2a13c9c9dc108954e913d8d54e3628f7,
@@ -6418,6 +6419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!4 &393320832 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4128274347803834, guid: 2a13c9c9dc108954e913d8d54e3628f7,
@@ -12549,6 +12551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!1001 &728793078
 Prefab:
   m_ObjectHideFlags: 0
@@ -15978,6 +15981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 270, z: 0}
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!1001 &963450550
 Prefab:
   m_ObjectHideFlags: 0
@@ -19976,10 +19980,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5744af6e581d364c9245e2055416178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waves: []
   carPrefab: {fileID: 1399108430}
   spawnPoint: {fileID: 2034360406}
   timeBetweenWaves: 7
-  waveCountdown: {fileID: 0}
+  countdown: 2
+  waveCountdownText: {fileID: 0}
+  gameManager: {fileID: 0}
+  JumlahWave: 0
+  EnemyKeluarTiapWave: 0
 --- !u!4 &1277496373
 Transform:
   m_ObjectHideFlags: 0
@@ -20006,6 +20015,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   standardTurretPrefab: {fileID: 1345939967574990, guid: 9b430f0f2cdc133468ff80f76910a73a,
     type: 2}
+  missileLauncherPrefab: {fileID: 0}
+  turretToBuild:
+    prefab: {fileID: 0}
+    cost: 0
 --- !u!1001 &1282047336
 Prefab:
   m_ObjectHideFlags: 0
@@ -21925,7 +21938,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4358f60ed1b541e44892c1cc87be3141, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 18
+  speed: 35
+  startHealth: 100
+  value: 60
+  healthBar: {fileID: 0}
 --- !u!4 &1410964834 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4128274347803834, guid: 2a13c9c9dc108954e913d8d54e3628f7,
@@ -21971,7 +21987,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c21b2fa8dcbe744bba76df2425e39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 0, y: 90, z: 0}
+  direction: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &1411787708
 GameObject:
   m_ObjectHideFlags: 0
@@ -22681,7 +22698,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c21b2fa8dcbe744bba76df2425e39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 0, y: 180, z: 0}
+  direction: {x: 0, y: 270, z: 0}
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &1459604469
 GameObject:
   m_ObjectHideFlags: 0
@@ -23615,7 +23633,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c21b2fa8dcbe744bba76df2425e39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 0, y: 270, z: 0}
+  direction: {x: 0, y: 180, z: 0}
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!4 &1501845579 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4128274347803834, guid: 2a13c9c9dc108954e913d8d54e3628f7,
@@ -26505,7 +26524,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c21b2fa8dcbe744bba76df2425e39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 0, y: 90, z: 0}
+  direction: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!1001 &1654055995
 Prefab:
   m_ObjectHideFlags: 0
@@ -30417,6 +30437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 90, z: 0}
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!4 &1954276168 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4128274347803834, guid: 2a13c9c9dc108954e913d8d54e3628f7,
@@ -30862,7 +30883,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c21b2fa8dcbe744bba76df2425e39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 0, y: 0, z: 0}
+  direction: {x: 0, y: 180, z: 0}
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!1001 &1976270057
 Prefab:
   m_ObjectHideFlags: 0
@@ -33187,7 +33209,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c21b2fa8dcbe744bba76df2425e39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 0, y: 180, z: 0}
+  direction: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!1001 &2129288588
 Prefab:
   m_ObjectHideFlags: 0

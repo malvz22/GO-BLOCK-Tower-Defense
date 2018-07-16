@@ -5,12 +5,15 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
 
     public static bool GameIsOver;
+    public static bool Win;
 
     public GameObject gameOverUI;
+    public GameObject completeLevelUI;
 
     void Start()
     {
-        GameIsOver = false;    
+        GameIsOver = false;
+        Win = false;
     }
 
     // Update is called once per frame
@@ -33,6 +36,12 @@ public class GameManager : MonoBehaviour {
     {
         GameIsOver = true;
         gameOverUI.SetActive(true);
+    }
+
+    public void WinLevel()
+    {
+        Win = true;
+        completeLevelUI.SetActive(true);
     }
 
 }
